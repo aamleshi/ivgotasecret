@@ -1,34 +1,34 @@
-Princeton University,
-Harvard University,
-Columbia University,
-Massachusetts Institute of Technology,
-Yale University,
-Stanford University,
-University of Chicago,
-University of Pennsylvania,
-Northwestern University,
-Duke University,
-Johns Hopkins University,
-California Institute of Technology,
-Darthmouth College,
-Brown University,
-University of Notre Dame,
-Vanderbilt University,
-Cornell University,
-Rice University,
-Washington University in St. Louis,
-University of California Los Angeles,
-Emory University,
-University of Californai Berkely,
-University of SOuthern California,
-Georgetown University,
-Carnegie Mellon University,
-University of Michigan Ann Arbor,
-Wake Forest University,
-University of Virginia,
-Georgia Institute of Technology,
-New York University,
-Tufts University,
+Princeton University
+Harvard University
+Columbia University
+Massachusetts Institute of Technology
+Yale University
+Stanford University
+University of Chicago
+University of Pennsylvania
+Northwestern University
+Duke University
+Johns Hopkins University
+California Institute of Technology
+Darthmouth College
+Brown University
+University of Notre Dame
+Vanderbilt University
+Cornell University
+Rice University
+Washington University in St. Louis
+University of California Los Angeles
+Emory University
+University of Californai Berkely
+University of SOuthern California
+Georgetown University
+Carnegie Mellon University
+University of Michigan Ann Arbor
+Wake Forest University
+University of Virginia
+Georgia Institute of Technology
+New York University
+Tufts University
 University of North Carolina Chapel Hill
 University of Rochester
 University of California Santa Barbara
