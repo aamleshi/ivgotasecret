@@ -11,22 +11,20 @@ import csv
 
 def scrapeCSV(schools, site, groupType, regex, n=5):
     #Creates a csv for a website/grouptype permutation
-    outFilename = site+groupType+".csv"
-    with open(outFilename, 'w') as outFile:
-        for school in tqdm(schools[:10]):
-            print(school)
+    outfilename = site[:-4]+groupType+".csv"
+    with open("rawScraped/"+outfilename, 'w') as outfile:
+        for school in tqdm(schools):
             raw_scrape = googleSearch("site:"+site + " " + school + " " +groupType, n)
             clean_scrape = googleSearchCleanup(raw_scrape, regex)
-            print(clean_scrape)
+            outfile.write(school+',' + ",".join(clean_scrape)+'\n')
 
 def googleSearchCleanup(urlList, regex):
     #Cleans up the list of searched posts to only include uniques at top level
-    print(urlList)
     cleanSet = set()
     for url in urlList:
-        cleanSet.add(regex.search(url).group(1))
-        #print(regex.search(url).group(0), regex.search(url).group(1))
-    print(list(cleanSet))
+        if url[-1] != '/':
+            url = url+'/'
+    return(list(cleanSet))
 
 def googleSearch(query, n):
     #returns top N results for searched string
@@ -46,8 +44,9 @@ def main(schoolFile):
 
     for site in Sites:
         for groupType in groupTypes:
+            print(site, groupType)
             scrapeCSV(schoolList, site, groupType, regex)
-            1/0
+            
 
     
     
