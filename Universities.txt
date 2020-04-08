@@ -69,4 +69,164 @@ University of Massachusetts Amherst
 Worcester Polytechnic Institute
 Clemson University
 George Washington University
-Texas A&M University College Station 
+Texas A&M University College Station
+University of Minnesota Twin Cities
+Fordham University
+Stevens Institute of Technology
+Virginia Tech
+American University
+Brigham Young University Provo
+Baylor University 
+Binghamton University SUNY
+Gonzaga University
+Indiana University Bloomington
+University at Buffalo SUNY
+Colorado School of Mines
+Elon University
+Marquette University
+Michigan State University
+North Varolina State University Raleigh
+University of California Santa Cruz
+University of Iowa
+Clark University
+Miami University Oxford
+Stony Brook University SUNY
+University of California Riverside
+University of Delaware 
+University of San Diego
+Drexel University
+New Jersey Institute of Technology
+Saint Lous University
+Texas Christian University
+University of Denver
+University of San Francisco
+Yeshiva University
+Auburn University
+Creighton University
+Howard University
+Loyola University Chicago
+Rochester Institute of Technology
+Temple University
+University of California Merced
+University of COlorado Boulder
+University of Oregon
+University of South Carolina
+University of South Florida
+University of Tennessee
+University of Utah
+Arizona State University Tempe
+Clarkson University
+Illinois Institute of Technology
+University of Arizona
+Iowa State University
+SUNY College of Environmental Science and Forestry
+University of Tulsa
+University of Vermont
+Chapman University
+DePaul University
+Simmons University
+University of New Hampshire
+University of the Pacific
+Drake University
+University of Kansas
+Duquesne University
+Rutgers University NEwardk
+University of Dayton
+Univiersity of Illinois Chicago
+University of Kentucky
+University of La Verne
+University of Oklahoma
+The Catholic University of America
+Oregon State University
+Seattle University
+Seton Hall University
+University of Cincinnati
+University of Missouri
+University of Nebraska Lincoln
+University of St. Thomas
+Michigan technological University
+Samford University
+San Diego State University
+University at Albany SUNY
+University of St. Joseph
+University of Texas Dallas
+George Mason University
+Louisiana State University Baton Rouge
+Mercer University 
+the NEw School
+Quinnipiac University
+Thomas Jefferson University
+University of Alabama
+University of Arkansas 
+Valparaiso University
+Hofstra University
+Kansas State University
+University of Mississippi
+Virginia Commoonwealth University
+Adelphi University
+Belmont University
+Colorado State University
+Montclair State University
+Rowan University
+Tutgers University Camden
+St. John Fisher College
+University of Alabama Brimingham
+University of central Florida
+University of Hawaii Manoa
+University of Maryland Baltimore County
+University of Rhode Islan
+Washington State University
+Gallaudet University
+Missouri University of Science and Technology
+St. John's University
+University of Detroit Mercy
+University of Idaho
+University of Massachusetts Lowell
+Biola University
+Chatham University
+Ohio University
+Pacific University
+Union University
+University of Houston
+University of North Carolina Wilmington
+Ball State University
+Miscericordia University
+Oklahoma State University
+Seattle Pacific University
+University of Louisville
+Bellarmine University
+Bethel University
+Illinois State University
+Loyola University New Orleans
+Towson University
+Edgewood College
+Florida Institute of Technology
+Maryville University of St. Louis
+Pace University
+Regis University
+Robert Morris University
+University of Maine
+University of St. Francis
+Widener University
+California State University Fresno
+Georgia State University
+Immaculta University
+Kent State University
+Mississippi State University
+University of Hartford
+Wilkes University
+Clarke University
+Flordia International University
+Gannon University 
+Hampton University
+Lipscomb University
+Sacred Heart University
+Texas Tech University
+University of Massachusetts Dartmouth
+University of New Mexico
+Western New England University
+Azusa Pacific University
+CUNY city College 
+East Carolina University
+Grand Valley State University
+
