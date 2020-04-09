@@ -8,14 +8,29 @@ import argparse
 import googlesearch
 import re
 import csv
+import time
+import os
+
+def updateSchoolList2File(schools, filepath):
+    if not os.path.exists(filepath):
+        return schools
+    with open(filepath,'r') as f:
+        lastLine = f.readlines()[-1]
+        lastSchool = lastLine.split(',')[0]
+    return schools[schools.index(lastSchool)+1:]
 
 def scrapeCSV(schools, site, groupType, regex, n=5):
     #Creates a csv for a website/grouptype permutation
-    outfilename = site[:-4]+groupType+".csv"
-    with open("rawScraped/"+outfilename, 'w') as outfile:
-        for school in tqdm(schools):
+    outfilename = "rawScraped/"+site[:-4]+groupType+".csv"
+
+    schools = updateSchoolList2File(schools, outfilename)
+    
+    
+    for school in tqdm(schools):
+        with open(outfilename, 'a') as outfile:
             raw_scrape = googleSearch("site:"+site + " " + school + " " +groupType, n)
             clean_scrape = googleSearchCleanup(raw_scrape, regex)
+            print(school)
             outfile.write(school+',' + ",".join(clean_scrape)+'\n')
 
 def googleSearchCleanup(urlList, regex):
@@ -24,15 +39,26 @@ def googleSearchCleanup(urlList, regex):
     for url in urlList:
         if url[-1] != '/':
             url = url+'/'
+        cleanSet.add(regex.search(url).group(1))
     return(list(cleanSet))
+
+def exponentialBackoff(t):
+    return t**2
 
 def googleSearch(query, n):
     #returns top N results for searched string
-  
-    return [result for result in googlesearch.search(query,
-        num=n,
-        stop=n,
-        pause=2)] 
+    timeout = 2
+    user_agent = googlesearch.get_random_user_agent()
+    while True:
+        try:
+            results = googlesearch.search(query,num=n,stop=n,pause=20, user_agent = user_agent)
+            return [result for result in results]
+        except:
+            print("timeout:" , timeout, time.time())
+            time.sleep(timeout)
+            timeout = exponentialBackoff(timeout)
+
+        
 
 def main(schoolFile):
     with open(schoolFile, 'r') as schoolList:
@@ -46,6 +72,7 @@ def main(schoolFile):
         for groupType in groupTypes:
             print(site, groupType)
             scrapeCSV(schoolList, site, groupType, regex)
+            1/0
             
 
     
