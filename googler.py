@@ -42,21 +42,22 @@ def googleSearchCleanup(urlList, regex):
         cleanSet.add(regex.search(url).group(1))
     return(list(cleanSet))
 
-def exponentialBackoff(t):
-    return t**2
+def progressiveBackoff(i):
+    return 15*i*60
 
 def googleSearch(query, n):
     #returns top N results for searched string
-    timeout = 2
+    tries = 1
     user_agent = googlesearch.get_random_user_agent()
     while True:
         try:
             results = googlesearch.search(query,num=n,stop=n,pause=20, user_agent = user_agent)
             return [result for result in results]
         except:
-            print("timeout:" , timeout, time.time())
+            timeout = progressiveBackoff(tries)
+            print("timeout:" , timeout)
             time.sleep(timeout)
-            timeout = exponentialBackoff(timeout)
+            tries += 1
 
         
 
@@ -72,7 +73,6 @@ def main(schoolFile):
         for groupType in groupTypes:
             print(site, groupType)
             scrapeCSV(schoolList, site, groupType, regex)
-            1/0
             
 
     
